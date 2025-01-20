@@ -3,4 +3,74 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid red; */
+}
+
+body {
+  height: 100vh;
+}
+
+nav {
+  background-color: aqua;
+  height: 100px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+li {
+  list-style: none;
+}
+
+nav h1 {
+  font-size: 3rem;
+}
+
+nav > ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav > ul li button {
+  list-style: none;
+  background-color:brown;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer
+}
+
+nav li button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+#dropdown ul {
+  position: absolute;
+}
+
+#dropdown li {
+  width: 100px;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: lightcoral;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#dropdown li:hover {
+  background-color: yellow;
+  color: black;
 }
